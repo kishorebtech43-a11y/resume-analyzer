@@ -9,7 +9,7 @@ async function analyze() {
     formData.append("resume", fileInput.files[0]);
     formData.append("job_desc", jobDesc);
 
-    let response = await fetch("http://127.0.0.1:5000/analyze", {
+    let response = await fetch("https://resume-analyzer-backend-7h2h.onrender.com/analyze", {
         method: "POST",
         body: formData
     });
